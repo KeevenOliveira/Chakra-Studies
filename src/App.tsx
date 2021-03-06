@@ -2,13 +2,7 @@ import * as React from "react"
 import {
   ChakraProvider,
   Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
   theme,
-  InputRightElement,
   Stack,
 } from "@chakra-ui/react"
 import Form from './Form';
