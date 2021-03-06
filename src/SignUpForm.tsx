@@ -4,7 +4,6 @@ import React from "react";
 
 const SignUpForm = () =>{
     return(
-        <form action="submit">
             <Stack spacing={2} boxShadow="xl" borderWidth="2px" padding="10" borderRadius="40px">
             <Text fontSize="3xl">Create your account here</Text>
             {/* Input to say first and second name */}
@@ -42,7 +41,6 @@ const SignUpForm = () =>{
                 </InputGroup>
             </FormControl>
             </Stack>
-        </form>
     ); 
 }
 export default SignUpForm;

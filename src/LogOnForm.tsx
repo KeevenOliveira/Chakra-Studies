@@ -1,10 +1,12 @@
-import {Input, Stack, Text, Button, FormControl, InputGroup, InputRightElement,InputLeftElement} from "@chakra-ui/react";
+import {useColorMode, Input, Stack, Text, Button, FormControl, InputGroup, InputRightElement,InputLeftElement} from "@chakra-ui/react";
 import { VscMail, VscLock, VscSignIn } from "react-icons/vsc";
 import React from 'react';
 
 const LogOnForm = () =>{
+
+    const {colorMode} = useColorMode();
+
     return(
-        <form action="submit">
         <Stack spacing={2} boxShadow="xl" borderWidth="2px" padding="10" borderRadius="40px">
         <Text fontSize="3xl">Login</Text>
         {/* Input to say email */}
@@ -28,7 +30,6 @@ const LogOnForm = () =>{
             </InputGroup>
         </FormControl>
         </Stack>
-    </form>
     );
 }
 export default LogOnForm;
