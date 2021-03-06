@@ -3,7 +3,6 @@ import {
   ChakraProvider,
   Box,
   theme,
-  Stack,
 } from "@chakra-ui/react"
 import Form from './Form';
 import Header from "./Header";

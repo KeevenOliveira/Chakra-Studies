@@ -2,12 +2,7 @@ import {
     Breadcrumb,
     BreadcrumbItem,
     BreadcrumbLink,
-    BreadcrumbSeparator,
     Flex,
-    Box,
-    Button,
-    Heading,
-    Spacer,
   } from "@chakra-ui/react"
 import React from 'react';
 import { ColorModeSwitcher } from "./ColorModeSwitcher"

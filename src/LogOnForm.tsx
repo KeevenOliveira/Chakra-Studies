@@ -1,10 +1,8 @@
-import {useColorMode, Input, Stack, Text, Button, FormControl, InputGroup, InputRightElement,InputLeftElement} from "@chakra-ui/react";
+import { Input, Stack, Text, Button, FormControl, InputGroup, InputRightElement,InputLeftElement} from "@chakra-ui/react";
 import { VscMail, VscLock, VscSignIn } from "react-icons/vsc";
 import React from 'react';
 
 const LogOnForm = () =>{
-
-    const {colorMode} = useColorMode();
 
     return(
         <Stack spacing={2} boxShadow="xl" borderWidth="2px" padding="10" borderRadius="40px">
