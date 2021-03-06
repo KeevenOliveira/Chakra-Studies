@@ -1,5 +1,5 @@
 import {Input, Stack, Text, Button, FormControl, InputGroup, InputRightElement,InputLeftElement} from "@chakra-ui/react";
-import { VscAccount, VscMail, VscLock, VscSignIn } from "react-icons/vsc";
+import { VscMail, VscLock, VscSignIn } from "react-icons/vsc";
 import React from 'react';
 
 const LogOnForm = () =>{
