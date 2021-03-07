@@ -1,15 +1,35 @@
-import Header from '../components/Header';
 import React from 'react';
-import {ChakraProvider, Stack, Box, Text} from '@chakra-ui/react';
+import {ChakraProvider, Stack, Box, Text, Flex, Breadcrumb, BreadcrumbItem, Tab, Tabs, TabList} from '@chakra-ui/react';
+import {Link} from 'react-router-dom';
+import {ColorModeSwitcher} from '../ColorModeSwitcher';
 
 const ContactPage= () =>{
     
     return(
         <ChakraProvider>
-        <Header/>
+            <Flex fontStyle="oblique" color="black" justifyContent="center" alignItems="center" width="100%" bg="yellow" padding="10px">
+                    <Breadcrumb separator="">
+                    
+                        <BreadcrumbItem>
+                            <Tabs defaultIndex={1} variant="enclosed">
+                                <TabList >
+                                    <Tab><Link to="/">Home</Link></Tab>
+                                    <Tab><Link to="/contact">Contact</Link></Tab>
+                                    <Tab><Link to="/about">About</Link></Tab>
+                                    <Tab><Link to="/register">Sign up / Login</Link></Tab>
+                                </TabList>
+                            </Tabs>
+                        </BreadcrumbItem>
+
+                        <BreadcrumbItem>
+                            <ColorModeSwitcher/>
+                        </BreadcrumbItem>
+                        
+                    </Breadcrumb>
+            </Flex>
             <Stack width="100%" height="100vh" justifyContent="center" alignItems="center">
                 <Box>
-                    <Text fontSize="50px">Hello World, This is the Contact Page🐱‍💻</Text>
+                    <Text fontSize="50px">Hello World, This is the Contact Page📞</Text>
                 </Box>
             </Stack>
         </ChakraProvider>

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import {
     Breadcrumb,
     BreadcrumbItem,
-    Flex,
+    Flex, Tabs, TabList, Tab,
   } from "@chakra-ui/react";
   import React from 'react';
   import { ColorModeSwitcher } from "../ColorModeSwitcher"
@@ -15,19 +15,14 @@ const Header = ()=>{
                 <Breadcrumb separator="">
                 
                     <BreadcrumbItem>
-                        <Link to="/">Home</Link>
-                    </BreadcrumbItem>
-
-                    <BreadcrumbItem>
-                        <Link to="/contact">Contact</Link>
-                    </BreadcrumbItem>
-
-                    <BreadcrumbItem>
-                        <Link to="/about">About</Link>
-                    </BreadcrumbItem>
-
-                    <BreadcrumbItem>
-                        <Link to="/register">Sign up / Login</Link>
+                        <Tabs variant="enclosed">
+                            <TabList >
+                                <Tab><Link to="/">Home</Link></Tab>
+                                <Tab><Link to="/contact">Contact</Link></Tab>
+                                <Tab><Link to="/about">About</Link></Tab>
+                                <Tab><Link to="/register">Sign up / Login</Link></Tab>
+                            </TabList>
+                        </Tabs>
                     </BreadcrumbItem>
 
                     <BreadcrumbItem>
