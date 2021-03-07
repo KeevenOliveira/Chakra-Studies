@@ -4,8 +4,8 @@ import {
   Box,
   theme,
 } from "@chakra-ui/react"
-import Form from './Form';
-import Header from "./Header";
+import Form from './components/Form';
+import Header from "./components/Header";
 
 export const App = () => (
   <ChakraProvider theme={theme}>

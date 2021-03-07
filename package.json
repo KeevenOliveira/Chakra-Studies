@@ -1,5 +1,5 @@
 {
-  "name": "type",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,12 +11,14 @@
     "@testing-library/user-event": "^12.0.2",
     "@types/jest": "^25.0.0",
     "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
+    "@types/react": "^16.14.5",
     "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.7",
     "framer-motion": ">=3.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^3.0.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "typescript": "^3.9.5",
     "web-vitals": "^0.2.2"

@@ -1,7 +1,7 @@
 import {Box, Tabs, TabList, TabPanel, Tab, TabPanels} from "@chakra-ui/react";
 import React from "react";
-import LogOnForm from "./LogOnForm";
-import SignUpForm from "./SignUpForm";
+import LogOnForm from "../LogOnForm";
+import SignUpForm from "../SignUpForm";
 
 const form = () =>{
  
