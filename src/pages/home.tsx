@@ -13,10 +13,10 @@ const HomePage= () =>{
                         <BreadcrumbItem>
                             <Tabs defaultIndex={0} variant="enclosed">
                                 <TabList >
-                                    <Tab><Link to="/">Home</Link></Tab>
-                                    <Tab><Link to="/contact">Contact</Link></Tab>
-                                    <Tab><Link to="/about">About</Link></Tab>
-                                    <Tab><Link to="/register">Sign up / Login</Link></Tab>
+                                    <Tab fontSize="lg"><Link to="/">Home</Link></Tab>
+                                    <Tab fontSize="lg"><Link to="/contact">Contact</Link></Tab>
+                                    <Tab fontSize="lg"><Link to="/about">About</Link></Tab>
+                                    <Tab fontSize="lg"><Link to="/register">Sign up / Login</Link></Tab>
                                 </TabList>
                             </Tabs>
                         </BreadcrumbItem>
