@@ -14,7 +14,7 @@ const HomePage= () =>{
                             <Tabs defaultIndex={0} variant="enclosed">
                                 <TabList >
                                     <Tab fontSize="lg"><Link to="/">Home</Link></Tab>
-                                    <Tab fontSize="lg"><Link to="/contact">Contact</Link></Tab>
+                                    {/* <Tab fontSize="lg"><Link to="/contact">Contact</Link></Tab> */}
                                     <Tab fontSize="lg"><Link to="/about">About</Link></Tab>
                                     <Tab fontSize="lg"><Link to="/register">Login</Link></Tab>
                                 </TabList>
