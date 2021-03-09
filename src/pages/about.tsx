@@ -11,7 +11,7 @@ const AboutPage= () =>{
                     <Breadcrumb separator="">
                     
                         <BreadcrumbItem>
-                            <Tabs defaultIndex={2} variant="enclosed">
+                            <Tabs defaultIndex={1} variant="enclosed">
                                 <TabList >
                                     <Tab fontSize="lg"><Link to="/">Home</Link></Tab>
                                     {/* <Tab fontSize="lg"><Link to="/contact">Contact</Link></Tab> */}

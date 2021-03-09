@@ -21,7 +21,7 @@ const SignAndLoginPage = () => {
                     <Breadcrumb separator="">
                     
                         <BreadcrumbItem>
-                            <Tabs defaultIndex={3} variant="enclosed">
+                            <Tabs defaultIndex={2} variant="enclosed">
                                 <TabList>
                                     <Tab fontSize="lg"><Link to="/">Home</Link></Tab>
                                     {/* <Tab fontSize="lg"><Link to="/contact">Contact</Link></Tab> */}
