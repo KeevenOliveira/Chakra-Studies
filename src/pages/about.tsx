@@ -42,10 +42,10 @@ const AboutPage= () =>{
                             <Text padding="10px" color="white" margin="5px" marginTop="10px" textAlign="center">Meu nome é Kennedy Adelson Lopes, sou corretor crediciado na <a href="https://direcional.com.br/">Direcional.</a></Text>
                             <Text padding="10px" color="white" margin="5px" marginTop="10px" textAlign="center"></Text>
                         </Box>
-                        <Box  marginBottom="10px">
-                            <Button leftIcon={<FaInstagram />}><a href="https://www.instagram.com/lopesconsultor123/">Instagram</a></Button>
-                            <Button leftIcon={<FaWhatsapp />} marginLeft="5px"><a href="https://api.whatsapp.com/send?phone=5581982687667&text=Oi%20Kennedy%2C%20tudo%20bem%3F%20Queria%20saber%20mais%20sobre%20algum%20im%C3%B3vel.">Whatsapp</a></Button>
-                            <Button leftIcon={<FaFacebook />} marginLeft="5px"><a href="https://www.facebook.com/kennedy.adelson">Facebook</a></Button>
+                        <Box d="flex" marginBottom="20px">
+                            <Button size="sm" leftIcon={<FaInstagram />}><a href="https://www.instagram.com/lopesconsultor123/">Instagram</a></Button>
+                            <Button size="sm" leftIcon={<FaWhatsapp />} marginLeft="5px"><a href="https://api.whatsapp.com/send?phone=5581982687667&text=Oi%20Kennedy%2C%20tudo%20bem%3F%20Queria%20saber%20mais%20sobre%20algum%20im%C3%B3vel.">Whatsapp</a></Button>
+                            <Button size="sm" leftIcon={<FaFacebook />} marginLeft="5px"><a href="https://www.facebook.com/kennedy.adelson">Facebook</a></Button>
                         </Box>
                     </Box>
                 </Stack>
