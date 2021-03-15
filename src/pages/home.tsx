@@ -27,8 +27,8 @@ const HomePage = () => {
         beds: 3,
         baths: 1,
         title:
-            "Um apartamento moderno e cheio de conforto para sua família",
-        formattedPrice: "R$100",
+            "Apartamentos modernos e cheios de conforto para sua família",
+        formattedPrice: "Entrada a partir de R$100,00",
         reviewCount: 34,
         rating: 4,
     };
@@ -129,7 +129,6 @@ const HomePage = () => {
                         <Box>
                             {property.formattedPrice}
                             <Box as="span" color="gray.600" fontSize="sm">
-                                / mês
                             </Box>
                         </Box>
 
@@ -187,7 +186,6 @@ const HomePage = () => {
                         <Box>
                             {property.formattedPrice}
                             <Box as="span" color="gray.600" fontSize="sm">
-                                / mês
                             </Box>
                         </Box>
 
@@ -235,7 +233,6 @@ const HomePage = () => {
         <Box>
           {property.formattedPrice}
           <Box as="span" color="gray.600" fontSize="sm">
-            / mês
           </Box>
         </Box>
 

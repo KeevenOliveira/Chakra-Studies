@@ -7,7 +7,7 @@ const Bottom = ()=>{
             <Stack>
                 <Table>
                     <Thead>
-                        <Text textAlign="center">© Todos os direitos reservados ao dono dessa página: Kennedy Adelson</Text>
+                        <Text marginBottom="20px" textAlign="center">© Todos os direitos reservados ao dono dessa página: Kennedy Adelson</Text>
                     </Thead>
                 </Table>
             </Stack>
