@@ -41,17 +41,16 @@ const HomePage = () => {
                 bg="blue.200"
                 padding="10px"
             >
-                <Box>
+                
                     <Image
-                        width="50px"
+                        width="40px"
                         alt="logo"
-                        src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F50ff5c5e-64d5-43c6-a04d-95b29e0007b6%2Flogo.png?table=block&id=e84a42e5-1647-4d58-a1f4-a294698c2468&width=1460&userId=3286d9fc-f488-4b46-88e5-40497632400d&cache=v2"
-                    ></Image>
-                </Box>
+                        src="https://lh3.googleusercontent.com/03vLfAOMrOIvFrf_zqAhEG8VdOLix8EArHV4d0P9myV8I-Iy_lSRniwbKiL83UCbCcewHtaBlPE7md_laoT2MG6SSkvUBgd3BvkqZgFWM0eAbJZsUZaUPPYZE_PnPfnrVi-nN1R8Xzna8NLxodXMKeMTcqAb2_Nbpthbj7ZZ0INHkIkzB2jPCWZ5ry4_Q3PGvaGGgBppNKv8eB4FdMG4CiIzZP5ChStbvWQnQ25h258W6A-m8ooKM2rWTN7L_OGfJH6zLNDjubooe4czcazO1UvX4goQHlGOhzYezHa_YkgFrEN4I4A8eAZxYLVPNzxQEYG_yPu8Xhvx63LiINpVi_yj0-sxYoFqCVJY-ts5V0P2N6WEkdw8eMKmW5Q8YkndwIitbgk763rjJWRHosdDLKOcP05Xv1cUrJ4nSMA74g02WBm81GJvUN15LqeWfWMyjoZslppNN091BYArpZ3S0UJP9ZQxrPw4Kxy_W-vbJnJmTmo8PQMwSyiyhUl2tfWSNkmE7G8ZxVwKz7tvEJjr2GEjm74u34qxK30LxOAHYcpQlVhTcT48zydueestR85WgDGTc0C2JI7GN6opIxiOs87a81qwN6uHZ9MZ1hEWcw4dFL9wwOgGHlyt6KZnFggh7wiuCwgnDiGP0muNuM3QbNUqpufJE5gsnj1aEAD8IskeBeLeBJufhUJ-28Z3eGRpso-mtQ0PbUpz8jfl-xxqFTur=s789-no?authuser=0"
+                    ></Image>                
                 <Box>
                     <Breadcrumb separator="">
                         <BreadcrumbItem>
-                            <Tabs colorScheme="white" defaultIndex={0} variant="enclosed">
+                            <Tabs colorScheme="black" defaultIndex={0} variant="enclosed">
                                 <TabList>
                                     <Tab fontSize="lg">
                                         <Link to="/">Home</Link>
