@@ -3,7 +3,6 @@ import {
     ChakraProvider,
     Stack,
     Box,
-    Text,
     Flex,
     Breadcrumb,
     BreadcrumbItem,
@@ -15,7 +14,8 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { ColorModeSwitcher } from "../ColorModeSwitcher";
-import { VscMail } from "react-icons/vsc";
+import { VscMail, VscAccount } from "react-icons/vsc";
+import Bottom from "../components/Bottom";
 
 
 const ContactPage = () => {
@@ -75,20 +75,30 @@ const ContactPage = () => {
                         ></Image>
                         <FormControl isRequired>
                             <InputGroup>
-                                <InputLeftElement children={<VscMail />} />
+                                <InputLeftElement children={<VscAccount />} />
                                 <Input
-                                    type="email"
-                                    placeholder="Say your e-mail"
+                                    type="name"
+                                    placeholder="Nome"
                                 />
                             </InputGroup>
                         </FormControl>
-                        <Textarea marginTop="10px"></Textarea>
+                        <FormControl isRequired>
+                            <InputGroup>
+                                <InputLeftElement children={<VscMail />} />
+                                <Input
+                                    type="email"
+                                    placeholder="Email"
+                                />
+                            </InputGroup>
+                        </FormControl>
+                        <Textarea placeholder="Digite sua mensagem" marginTop="10px"></Textarea>
                         <Box>   
-                            <Button>Enviar</Button>
+                            <Button type="submit">Enviar</Button>
                         </Box>
                     </Box>
                 </Stack>
             </Box>
+            <Bottom />
         </ChakraProvider>
     );
 };

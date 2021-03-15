@@ -15,17 +15,20 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { ColorModeSwitcher } from "../ColorModeSwitcher";
+import Bottom from "../components/Bottom";
 
 const HomePage = () => {
     const property = {
         // imageUrl:"https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1c9acfca-0667-45e3-a585-47616c3ff710%2FUntitled.png?table=block&id=223f15f4-75e5-4a02-ade8-92f6603fb0ac&width=3200&userId=3286d9fc-f488-4b46-88e5-40497632400d&cache=v2",
-        imageUrl: "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb8ac2d5c-4998-48bb-b928-a4815f6e7dd3%2Fme.png?table=block&id=5f0ef1d2-1f4e-4f5b-8c36-2d5e98a7c976&width=3200&userId=3286d9fc-f488-4b46-88e5-40497632400d&cache=v2",
+        imageUrl: "https://lh3.googleusercontent.com/8qsRNjtWv9p6AONURfrp4HXSDZaLwUAHR8i8lPJ0w_h6sjclzznQoa0WuiHDDCyy0hfWTimKcecB2Gq1rmUEwCb7-TZV6XnzvJjBTJesxfk1ui4HGknqHTttXLRR7A960If7G94fiW2kyd41f8ptlbduUNZX4BuM7_lduW8ttbulioXjDl91m1RGgPRyxG114AJ9TDuSrEtPqsSew8wPmsXv8WpJKaT4lz7yqT4j1dFZCqpY1pV2xYLubxeE6g-B3qV8l8m-fZwG031acx5Xj1t07vB_iwc0JYQ_5XG8t3d7r4pXpHAJ73X98olmf_-zSjpgj4idDnp-Uyezxggxdsk3CBeZqo1xIE9hiAmN0uEtrC9zE1BfawfA2ea2q3yjBw65SzkUa0OwUglqrl3Vo5d_g30HIPw7CvXrxzGeSnjVDgE5xSqttwQXTSEb-i0Wfl8DtdO9QWrbuj_uwLvVmfxXNIJD3K8fzzYchEZgaGPe0Fkjc9MVtHEcQ25HvW3xxvc9qY4BLqdYcTpp_bZksT7vSN5W1k5Uuo41nEdq4STUfWP63K_qirRcZOaVgbbSpwS4YQJ0f9LB5OA8ou_JxfFoaqWS1LdQmcawGwkHjWkfFVtqGHYhUJqeRakYL-wWpTeVzhvlvvCSJYPdtpyaE3JM9KWllPd1E5SrAVPVDsjoO_34uHmPWcMwL5eTMyEGSrYLb3OKXhw0MbsrOmPLtQp2=s328-no?authuser=0",
+        imageUrl1:"https://lh3.googleusercontent.com/V2wU0GJ4_OQR9rJDQI36P0F0VpKpw9vKvjeqMhsRK62-h_l5mgmVNl7LzPKqQnJw_txEtSzWzJsD4CVkDP79MPSyqM6BBiZVY08jjcpX8ox9DiUxdAIarSxBK9TyXoNmPyQwRQQN2CpfldMVxNdkCBVuOHrrH1A7RH58G0BAF76o0LaLYGWq6DjcXxhF-hha1P0YLPPDRy0qPJWouNKvC4PvIhNayPHPLX5f5KPjbz3L7ZJ-BdKX7BlIv5W2oFwVsYboCE040PUGstogWzZN1_syVZ-ubg3zYlt-srJ39YxtyU1mUpJX-bSoH8tZBTFv-flvS_JvxBkEYegPJ9Zzna6xVJ-1uYkOvWJ4nkX55F_YpS1i39xUqeRkMFrgO8gWnZoKnpbAgu1hWJJZWfpw6htGC-k04AL2Dxw-BNEYvcpzb0fQizbN8Yx75H34VnYDtrHQySPu8XpSGwrjidYjnZCwd-Cy52_wvely-wX_Q4PN2e2zKp886JrFwPS8bAzJbIwfQcSOODT2_FWfP1kb0xjOC5A7lakP0sPbDIJBWnh3JN8BIc5NBw5rSfGV57qlW8Y_vYMxH5-R6LVFUJpR0YYyMtffBE1__lYihskRsW6W8au1jtxV_SO36rKMFa-6mrrltOOIY1wDMOPwQJPlZNXVLghUMIHpD6GNmshkYHIjr2H30c3EDhwczcsjicDeoZDS6QChKPRhzAVOTXTdMWpv=s732-no?authuser=0",
+        imageUrl2:"https://lh3.googleusercontent.com/4wpn9Mi4csphCMZpwgowr8lRmCSTY3EjGuYz9KHEcgOOLW2heZnFC32rn5bplgt33Xhf4XmZxQH80fSzIrX7gMIukapVYiiqfkru9tJbl355KHhjSxLx60WTponEAsefqkLFl4sr9Qa5RFMRGmBJ5_K9X9DHuOPSMK1vY1jLuBBiqRxY-471pgUFt4ohiop-FyXeG93wawGBSA-zuD4-l_1fs0sW2elpUMKcucRB7617mbkx4wOYGfDwFkJIiAjHRINuoWlWb_qlzMbqbaB4L2W6fNdC5YuZ3SByoPa3-B4tdD2SMmIFfGkqaXhjUYtqRd9r99l8LEnNDjOks5-LisvgadX4VYpIBHk7KhhrSU2_lCQoLpE1IJ94MpEXg5MoV6bmmcwl-3ztnXGDyGjjCKlkSwyn8oCMuarg3swas_WI3RoAQnEgCHBhHHVaV2gT1p0VN5-h1yd7oSygKY7PKH-cIUUtqAFBnasxlTZIYPVPbP-sVNgHLYyOlNJmmhs2sZJTw0oqDFNPX3-To9_4fRBeM2ZO5jS8yj68lo8ANoog7Xd8-fHhvTIyrrbGHpj0FOKbaLzKrdpVzU9a6kUJOtOvHRBGayKL6DlYPSBAF-ItARM1Otpn3yTicFpQlvXZtxl5OvbKEF-JxUc6XurFUqBviLXEMyt4FajSiUkR5PhQq5N1GrelU_78ivIMT3MJCsF8v2ATbu1aEqPWZVMUX9oL=s732-no?authuser=0",
         imageAlt: "Rear view of modern home with pool",
         beds: 3,
-        baths: 2,
+        baths: 1,
         title:
-            "Modern home in city center in the heart of historic Los Angeles",
-        formattedPrice: "$1,900.00",
+            "Um apartamento moderno e cheio de conforto para sua família",
+        formattedPrice: "R$100",
         reviewCount: 34,
         rating: 4,
     };
@@ -89,9 +92,9 @@ const HomePage = () => {
                     borderWidth="1px"
                     borderRadius="lg"
                     overflow="hidden"
-                    margin="1em"
+                    margin="0.5em"
                 >
-                    <Image src={property.imageUrl} alt={property.imageAlt} />
+                    <Image src={property.imageUrl2} alt={property.imageAlt} />
 
                     <Box p="6">
                         <Box d="flex" alignItems="baseline">
@@ -110,8 +113,6 @@ const HomePage = () => {
                                 textTransform="uppercase"
                                 ml="2"
                             >
-                                {property.beds} beds &bull; {property.baths}{" "}
-                                baths
                             </Box>
                         </Box>
 
@@ -128,7 +129,7 @@ const HomePage = () => {
                         <Box>
                             {property.formattedPrice}
                             <Box as="span" color="gray.600" fontSize="sm">
-                                / wk
+                                / mês
                             </Box>
                         </Box>
 
@@ -139,7 +140,7 @@ const HomePage = () => {
                                 color="gray.600"
                                 fontSize="sm"
                             >
-                                {property.reviewCount} reviews
+                                {property.reviewCount} visulizações
                             </Box>
                         </Box>
                     </Box>
@@ -151,7 +152,7 @@ const HomePage = () => {
                     overflow="hidden"
                     margin="1em"
                 >
-                    <Image src={property.imageUrl} alt={property.imageAlt} />
+                    <Image src={property.imageUrl1} alt={property.imageAlt} />
 
                     <Box p="6">
                         <Box d="flex" alignItems="baseline">
@@ -169,9 +170,7 @@ const HomePage = () => {
                                 fontSize="xs"
                                 textTransform="uppercase"
                                 ml="2"
-                            >
-                                {property.beds} beds &bull; {property.baths}{" "}
-                                baths
+                            >                   
                             </Box>
                         </Box>
 
@@ -188,7 +187,7 @@ const HomePage = () => {
                         <Box>
                             {property.formattedPrice}
                             <Box as="span" color="gray.600" fontSize="sm">
-                                / wk
+                                / mês
                             </Box>
                         </Box>
 
@@ -199,13 +198,13 @@ const HomePage = () => {
                                 color="gray.600"
                                 fontSize="sm"
                             >
-                                {property.reviewCount} reviews
+                                {property.reviewCount} visulizações
                             </Box>
                         </Box>
                     </Box>
                 </Box>
                 <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden" margin="1em">
-      <Image src={property.imageUrl} alt={property.imageAlt} />
+      <Image width="100%" src={property.imageUrl} alt={property.imageAlt} />
 
       <Box p="6">
         <Box d="flex" alignItems="baseline">
@@ -220,7 +219,6 @@ const HomePage = () => {
             textTransform="uppercase"
             ml="2"
           >
-            {property.beds} beds &bull; {property.baths} baths
           </Box>
         </Box>
 
@@ -237,20 +235,21 @@ const HomePage = () => {
         <Box>
           {property.formattedPrice}
           <Box as="span" color="gray.600" fontSize="sm">
-            / wk
+            / mês
           </Box>
         </Box>
 
         <Box d="flex" mt="2" alignItems="center">
           
           <Box as="span" ml="2" color="gray.600" fontSize="sm">
-            {property.reviewCount} reviews
+            {property.reviewCount} visulizações
           </Box>
         </Box>
       </Box>
     </Box>
  </Stack>
         </Box>
+        <Bottom />
         </ChakraProvider>
     );
 };
