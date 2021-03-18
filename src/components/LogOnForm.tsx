@@ -11,20 +11,20 @@ const LogOnForm = () =>{
         <FormControl isRequired> 
             <InputGroup>
                 <InputLeftElement children={<VscMail/>}/>
-                  <Input  type="email" placeholder="Say your e-mail"/>
+                  <Input  type="email" placeholder="E-mail"/>
             </InputGroup>
         </FormControl>
         {/* First input to say your password */}
         <FormControl isRequired> 
             <InputGroup>
                 <InputLeftElement children={<VscLock/>}/>
-                    <Input type="password"  placeholder="Tell me your password here"/>
+                    <Input type="password"  placeholder="Senha"/>
             </InputGroup>
         </FormControl>
         <FormControl> 
             <InputGroup>
                 <InputRightElement children={<VscSignIn />}/>
-                <Button color="black" type="submit" bg="yellow.300" size="lg">Login</Button>
+                <Button color="black" type="submit" bg="blue.300" size="lg">Login</Button>
             </InputGroup>
         </FormControl>
         </Stack>
