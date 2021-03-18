@@ -16,9 +16,11 @@ import { Link } from "react-router-dom";
 import { ColorModeSwitcher } from "../ColorModeSwitcher";
 import { VscMail, VscAccount } from "react-icons/vsc";
 import Bottom from "../components/Bottom";
+import email from '../assets/email.svg';
 
 
 const ContactPage = () => {
+
     return (
         <ChakraProvider>
             <Flex
@@ -71,7 +73,7 @@ const ContactPage = () => {
                     <Box borderRadius="20px" padding="30px" boxShadow="dark-lg">
                         <Image
                             width="300px"
-                            src="https://lh3.googleusercontent.com/Q7UjVci__--6ae2HuUoIhWXPKacjSfpsDw4yqXkKlW87vCgzZPhGlVT-ALV0_Cjqg9KpbT9ejIuT76-tnwp6xyblw1G0HhaaYk9DAo9axCz4NvsZ6XsGigQGyyuqbHCpg6KMNkWbTvZhirKfv2e_fRDBz_sKyRt9DY9NYBcurnihrX_JfJ_qcHcIZmuruELyJjJ5F00z9g4CgUOySB8fr6Rd2XwqA03WC2x3383NkACFnrT7QSql89YqZr7IutO8k84S6WL7A9TYzXq2gunf-yjPuBZHInErrodrSukUj6MDJztkf-lPUA8t24IHWd-0XTPkRk2FRYSVm5j-8yHhXHN6weYLLZVZ0AbCoeq5ZSH16HNCgVy5wW8vM-n_3GYTY6Yd0NyTktJB4Z22IgAsQlOd80w88PFsMeZI8UIANJmknXHELSgTZ1j-2YQMw83kAsfbXq0jyMpmsk4cK73tdK5vuwP24d-W9f6em850EEqIfA1CS7l60t4PbRZwpE_r4MMmzSF4Lr0yq7YWJ69XltPwWJsusmLwgtO-9wLhwXxE6Nmla-V0YWReL4kVViZgM4MaSAxagtIQhrM6mGuw7VEcxfFuqkNmlDC3PMSWIs7y3HI79m40R7VXr24MQmQyLqouLWen3FAt5HWGeWfpPb77XWFzFCAmFx3__zEx0f_I51i6YHkz11pKqU1FVmkCTuOSjJ_Tqo-MEz0VrM7Z7J3I=s732-no?authuser=0"
+                            src={email}
                         ></Image>
                         <FormControl isRequired>
                             <InputGroup>
@@ -92,11 +94,11 @@ const ContactPage = () => {
                             </InputGroup>
                         </FormControl>
                         <Textarea placeholder="Digite sua mensagem" marginTop="10px"></Textarea>
-                        <Box>   
+                        <Box width="10px">
                             <Button type="submit">Enviar</Button>
+                            </Box>
                         </Box>
-                    </Box>
-                </Stack>
+                    </Stack>
             </Box>
             <Bottom />
         </ChakraProvider>
